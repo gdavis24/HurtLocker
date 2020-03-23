@@ -11,10 +11,11 @@ public class Main {
 
     public static void main(String[] args) throws Exception{
         String output = (new Main()).readRawDataToString();
+        String[] data = output.split("##");
         Parse parse = new Parse();
 //        output = parse.parseData();
-
+        int len1 = output.length();
         System.out.println(output);
-
+        System.out.println(data);
     }
 }
